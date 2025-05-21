@@ -91,14 +91,14 @@
           }
         },
         {
-        "name": "Tiktok Downloader V2",
-        "desc": "Download Tiktok No Wm Premium",
-        "path": "/downloader/ttv2?url=",
-        "status": "ready",
-        "requireKey": true,
-        "params": {
-        "url": "url dari tiktok"
-        }
+          "name": "Tiktok Downloader",
+          "desc": "Download Tiktok",
+          "path": "/downloader/ttv2?url=",
+          "status": "ready",
+          "requireKey": true,
+          "params": {
+            "url": "url dari tiktok"
+          }
         },
         {
           "name": "Youtube Video Downloader",
