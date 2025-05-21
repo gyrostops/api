@@ -2,7 +2,7 @@
   "name": "Xgtib Api",
   "version": "v2.0",
   "description": "Rest Api Xgtib",
-  "bannerImage": "https://cloudkuimages.guru/uploads/images/6827f8a1610e9.jpg",
+  "bannerImage": "https://files.catbox.moe/0a58nf.jpg",
   "header": {
     "status": "Online!"
   },
@@ -91,7 +91,7 @@
           }
         },
         {
-          "name": "Tiktok Downloader",
+          "name": "Tiktok Downloader v2",
           "desc": "Download Tiktok",
           "path": "/downloader/ttv2?url=",
           "status": "ready",
