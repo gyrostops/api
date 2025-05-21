@@ -1,14 +1,14 @@
 {
-  "name": "Anomaki Apis",
-  "version": "v1.0",
-  "description": "Rest Api Simple",
-  "bannerImage": "https://files.catbox.moe/0a58nf.jpg",
+  "name": "Xgtib Api",
+  "version": "v2.0",
+  "description": "Rest Api Xgtib",
+  "bannerImage": "https://cloudkuimages.guru/uploads/images/6827f8a1610e9.jpg",
   "header": {
     "status": "Online!"
   },
   "apiSettings": {
-    "creator": "Xyzan - Anomaki",
-    "globalKey": ["yo"],
+    "creator": "Xgtib - GxoProject",
+    "globalKey": ["xgtibganteng"],
     "defaultRequireKey": true
   },
   "categories": [
@@ -89,6 +89,16 @@
           "params": {
             "url": "url dari tiktok"
           }
+        },
+        {
+        "name": "Tiktok Downloader V2",
+        "desc": "Download Tiktok No Wm Premium",
+        "path": "/downloader/ttv2?url=",
+        "status": "ready",
+        "requireKey": true,
+        "params": {
+        "url": "url dari tiktok"
+        }
         },
         {
           "name": "Youtube Video Downloader",
