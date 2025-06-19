@@ -353,6 +353,6 @@ async function scrapeTikTok(url) {
 }
 
 // Export untuk penggunaan sebagai module
-module.exports = { TiktokScraper, scrapeTiktok };
+module.exports = { scrapeTiktok };
 
 
