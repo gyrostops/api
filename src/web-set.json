@@ -8,7 +8,7 @@
   },
   "apiSettings": {
     "creator": "Xgtib - GxoProject",
-    "globalKey": ["xgtibganteng"],
+    "globalKey": ["xgtib"],
     "defaultRequireKey": true
   },
   "categories": [
@@ -87,7 +87,7 @@
           "status": "ready",
           "requireKey": false,
           "params": {
-            "url": "url dari tiktok"
+            "query": "url dari tiktok"
           }
         },
         {
