@@ -43,7 +43,7 @@ async function downloadTikTok(query) {
   }
 
   const token = await fetchCsrfToken();
-  const payload = { url: videoUrl, _token: token };
+  const payload = { url: query, _token: token };
   const resp = await client.post(
     'https://kol.id/download-video/tiktok',
     payload,
