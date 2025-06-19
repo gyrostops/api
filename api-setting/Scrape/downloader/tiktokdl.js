@@ -203,10 +203,10 @@ class TikTokScraper {
   }
 
   // Main scraping function
-  async scrape(url) {
+  async scrape(tiktokUrl) {
     try {
       console.log('🚀 Memulai scraping TikTok...');
-      console.log('📱 URL:', url);
+      console.log('📱 URL:', tiktokUrl);
       console.log('━'.repeat(60));
 
       // Step 1: Get token
@@ -216,7 +216,7 @@ class TikTokScraper {
       console.log('🔄 Mengirim request ke API...');
       
       const formData = new URLSearchParams();
-      formData.append('url', url);
+      formData.append('url', tiktokUrl);
       formData.append('lang', 'en2');
       formData.append('token', token);
 
@@ -256,7 +256,7 @@ class TikTokScraper {
       return {
         success: true,
         data: {
-          originalUrl: url,
+          originalUrl: tiktokUrl,
           ...videoInfo
         }
       };
@@ -266,7 +266,7 @@ class TikTokScraper {
       return {
         success: false,
         error: error.message,
-        originalUrl: url
+        originalUrl: tiktokUrl
       };
     }
   }
@@ -355,12 +355,12 @@ async function scrapeTikTok(url) {
 // Export untuk penggunaan sebagai module
 module.exports = { TikTokScraper, scrapeTikTok };
 
-/*Jika dijalankan langsung
+/*
 if (require.main === module) {
   // Contoh penggunaan
-  const url = url;
+  const tiktokUrl = "https://www.tiktok.com/@dayyanbae_3/video/7515070760566820104";
   
-  scrapeTikTok(url)
+  scrapeTikTok(tiktokUrl)
     .then(result => {
       const scraper = new TikTokScraper();
       console.log(scraper.formatOutput(result));
@@ -374,19 +374,21 @@ if (require.main === module) {
     .catch(console.error);
 }
 */
-// Contoh penggunaan dengan promise
-/*
-scrapeTikTok("https://www.tiktok.com/@username/video/1234567890")
+try {
+  const puqi ={
+    tiktokUrl: url
+  };
+const result = await scrapeTikTok(puqi)
   .then(result => {
     if (result.success) {
-      console.log('Title:', result.data.title);
-      console.log('Author:', result.data.author);
-      console.log('Content Type:', result.data.contentType);
-      console.log('Video Links:', result.data.downloadLinks);
-      console.log('Photos:', result.data.photos);
-      console.log('Render Data:', result.data.renderData);
+      console.log('Title:', result.puqi.title);
+      console.log('Author:', result.puqi.author);
+      console.log('Content Type:', result.puqi.contentType);
+      console.log('Video Links:', result.puqi.downloadLinks);
+      console.log('Photos:', result.puqi.photos);
+      console.log('Render Data:', result.puqi.renderData);
     } else {
       console.log('Error:', result.error);
     }
   });
-*/
+                             }
