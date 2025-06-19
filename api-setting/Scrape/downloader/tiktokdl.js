@@ -392,5 +392,5 @@ const result = await scrapeTikTok(puqi)
       console.log('Error:', result.error);
     }
   });
-}
+};
 }
