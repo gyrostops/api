@@ -374,6 +374,7 @@ if (require.main === module) {
     .catch(console.error);
 }
 */
+async function TiktokScraper(url){
 try {
   const puqi ={
     tiktokUrl: url
@@ -392,3 +393,4 @@ const result = await scrapeTikTok(puqi)
     }
   });
                              }
+}
