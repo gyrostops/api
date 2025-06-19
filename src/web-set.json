@@ -83,9 +83,9 @@
         {
           "name": "Tiktok Downloader",
           "desc": "Download Tiktok",
-          "path": "/downloader/tiktokdl?url=",
+          "path": "/downloader/tiktokdl?query=",
           "status": "ready",
-          "requireKey": false,
+          "requireKey": true,
           "params": {
             "query": "url dari tiktok"
           }
