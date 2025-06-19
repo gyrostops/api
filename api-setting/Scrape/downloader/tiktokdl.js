@@ -33,7 +33,7 @@ async function fetchCsrfToken() {
   if (!token) throw new Error('CSRF token tidak ditemukan');
   return token;
 }
-  })();
+  
 
 async function downloadTikTok(query) {
   try {
@@ -56,3 +56,4 @@ async function downloadTikTok(query) {
 }
 
 module.exports = { downloadTikTok };
+})();
