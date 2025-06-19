@@ -355,7 +355,7 @@ async function scrapeTikTok(url) {
 // Export untuk penggunaan sebagai module
 module.exports = { TikTokScraper, scrapeTikTok };
 
-// Jika dijalankan langsung
+/*Jika dijalankan langsung
 if (require.main === module) {
   // Contoh penggunaan
   const url = url;
@@ -373,7 +373,7 @@ if (require.main === module) {
     })
     .catch(console.error);
 }
-
+*/
 // Contoh penggunaan dengan promise
 /*
 scrapeTikTok("https://www.tiktok.com/@username/video/1234567890")
