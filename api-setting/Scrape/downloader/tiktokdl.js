@@ -1,7 +1,8 @@
-const axios = require('axios');
-const { wrapper } = require('axios-cookiejar-support');
-const { CookieJar } = require('tough-cookie');
-const cheerio = require('cheerio');
+(async () => {
+  const { wrapper } = await import('axios-cookiejar-support');
+  const { CookieJar } = await import('tough-cookie');
+  const axios = require('axios');
+  const cheerio = require('cheerio');
 
 const jar = new CookieJar();
 const client = wrapper(axios.create({
@@ -52,5 +53,6 @@ async function downloadTikTok(query) {
   }
   return resp.data;
 }
+})();
 
 module.exports = { downloadTikTok };
