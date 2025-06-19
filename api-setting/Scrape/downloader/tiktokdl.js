@@ -353,44 +353,5 @@ async function scrapeTikTok(url) {
 }
 
 // Export untuk penggunaan sebagai module
-module.exports = { TikTokScraper, scrapeTikTok };
+module.exports = scrapeTiktok;
 
-/*
-if (require.main === module) {
-  // Contoh penggunaan
-  const tiktokUrl = "https://www.tiktok.com/@dayyanbae_3/video/7515070760566820104";
-  
-  scrapeTikTok(tiktokUrl)
-    .then(result => {
-      const scraper = new TikTokScraper();
-      console.log(scraper.formatOutput(result));
-      
-      // Return JSON juga untuk penggunaan programmatic
-      if (result.success) {
-        console.log('\n📋 JSON OUTPUT:');
-        console.log(JSON.stringify(result.data, null, 2));
-      }
-    })
-    .catch(console.error);
-}
-*/
-async function TiktokScraper(url){
-try {
-  const puqi ={
-    tiktokUrl: url
-  };
-const result = await scrapeTikTok(puqi)
-  .then(result => {
-    if (result.success) {
-      console.log('Title:', result.puqi.title);
-      console.log('Author:', result.puqi.author);
-      console.log('Content Type:', result.puqi.contentType);
-      console.log('Video Links:', result.puqi.downloadLinks);
-      console.log('Photos:', result.puqi.photos);
-      console.log('Render Data:', result.puqi.renderData);
-    } else {
-      console.log('Error:', result.error);
-    }
-  });
-};
-}
